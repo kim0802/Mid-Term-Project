@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>김지훈 자기소개 홈페이지</title>
+    <meta charset="UTF-8">
+    <title>김지훈 자기소개 홈페이지</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        #header {
+            margin-bottom: 20px;
+        }
+
+        #content {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        #me {
+            flex-basis: 50%;
+            margin-right: 20px;
+        }
+
+        #Interest {
+            flex-basis: 50%;
+            margin-left: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>김지훈 자기소개 홈페이지</h1>
-    
+    <div id="header">
+        <h1>김지훈 자기소개 홈페이지</h1>
+    </div>
 
-	<main>
-		<section id="me">
+    <div id="content">
+        <section id="me">
             <img id="profile" src="ME.jpg" alt="프로필 이미지" width="300" height="auto">
-			<h3>김지훈</h3>
+            <h3>김지훈</h3>
             <p>생년월일: 2000.08.02</p>
             <p>이메일: cpu0802@naver.com</p>
             <p>전화번호: 01035002895</p>
             <p>소속 학과: SW융합대학 모바일시스템공학과</p>
             <a href="https://github.com/kim0802"><img src="git.png"/></a>
             <a href="https://www.instagram.com/jihoon.802/"><img src="instagram.png"/></a>
-		</section>
+        </section>
 
-
-        
         <section id="Interest">
             <h3>Interest</h3>
             <p>축구, 풋살, 여행, 웨이트, 게임 </p>
@@ -33,8 +60,6 @@
             <img id="barcelona" src="barcelona.png" alt="바르사 이미지" width="400" height="auto">
             <h3>FC Barcelona</h3>
         </section>
-		
-	</main>
-
+    </div>
 </body>
 </html>
